@@ -5,118 +5,544 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First HW</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <a href="#" class="logo">
-          <svg class="logo__icon" width="310" height="26">
-            <use href="./images/symbol-defs.svg#icon-inst"></use>
-          </svg>
-        </a>
-        <form class="header-form">
-          <input
-            type="text"
-            autocomplete="off"
-            placeholder="Search"
-            class="header-form__input"
-          />
-          <button type="submit" class="header-form__button">
-            <svg
-              aria-label="search"
-              class="header-form__icon"
-              width="9"
-              height="9"
-            >
-              <use href="./images/symbol-defs.svg#icon-search"></use>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__wrapper">
+          <a href="#" class="logo">
+            <svg class="logo__icon" width="104" height="29">
+              <use href="./images/symbol-defs.svg#icon-inst"></use>
             </svg>
-          </button>
-        </form>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link"
-                ><svg
-                  aria-label="house"
-                  class="nav__icon"
-                  width="22"
-                  height="22"
-                >
-                  <use href="./images/symbol-defs.svg#icon-home"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link"
-                ><svg
-                  aria-label="direct"
-                  class="nav__icon nav__icon--arrow"
-                  width="22"
-                  height="19"
-                >
-                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                </svg>
-                <svg
-                  aria-label="ellips"
-                  class="nav__ellips"
-                  width="18"
-                  height="18"
-                >
-                  <use href="./images/symbol-defs.svg#icon-ellipsered"></use>
-                </svg>
-                <svg
-                  aria-label="number"
-                  class="nav__number"
-                  width="6"
-                  height="16"
-                >
-                  <use href="./images/symbol-defs.svg#icon-five"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link"
-                ><svg
-                  aria-label="compass"
-                  class="nav__icon"
-                  width="22"
-                  height="22"
-                >
-                  <use href="./images/symbol-defs.svg#icon-compass"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <svg
-                  aria-label="heart"
-                  class="nav__icon"
-                  width="22"
-                  height="19"
-                >
-                  <use href="./images/symbol-defs.svg#icon-heart"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link"
-                ><svg
-                  aria-label="circle"
-                  class="nav__icon"
-                  width="22"
-                  height="22"
-                >
-                  <use href="./images/symbol-defs.svg#icon-circle"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
+          </a>
+          <form class="header-form">
+            <input
+              type="text"
+              autocomplete="off"
+              placeholder="Search"
+              class="header-form__input"
+            />
+            <button type="submit" class="header-form__button">
+              <svg
+                aria-label="search"
+                class="header-form__icon"
+                width="9"
+                height="9"
+              >
+                <use href="./images/symbol-defs.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link"
+                  ><svg
+                    aria-label="house"
+                    class="nav__icon"
+                    width="22"
+                    height="22"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-home"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link"
+                  ><svg
+                    aria-label="direct"
+                    class="nav__icon nav__icon--arrow"
+                    width="22"
+                    height="19"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                  </svg>
+                  <svg
+                    aria-label="ellips"
+                    class="nav__ellips"
+                    width="18"
+                    height="18"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-ellipsered"></use>
+                  </svg>
+                  <svg
+                    aria-label="number"
+                    class="nav__number"
+                    width="6"
+                    height="16"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-five"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link"
+                  ><svg
+                    aria-label="compass"
+                    class="nav__icon"
+                    width="22"
+                    height="22"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-compass"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <svg
+                    aria-label="heart"
+                    class="nav__icon"
+                    width="22"
+                    height="19"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-heart"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link"
+                  ><svg
+                    aria-label="circle"
+                    class="nav__icon"
+                    width="22"
+                    height="22"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-circle"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
-      <div class="container"></div>
+      <section class="about-me">
+        <div class="container">
+          <div class="about-me__card">
+            <picture class="about-me__picture">
+              <source
+                srcset="
+                  ./images/about/webp/photo@1x.webp 1x,
+                  ./images/about/webp/photo@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 152px) "
+              />
+              <source
+                srcset="
+                  ./images/about/jpg/photo1.jpg 1x,
+                  ./images/about/jpg/photo2.jpg 2x
+                "
+                type="image/jpeg"
+                sizes="(min-width: 152px) 152px"
+              />
+              <img src="./images/about/jpg/photo1.jpg" alt="user" />
+            </picture>
+          </div>
+          <h1 class="about-me__title">name</h1>
+          <div class="about-me__wrapper">
+            <button class="about-me__primary-btn">
+              <span class="about-me__text">Follow</span>
+            </button>
+            <button class="about-me__secondary-btn">
+              <svg class="about-me__icon" width="8" height="5">
+                <use href="./images/symbol-defs.svg#icon-Polygon"></use>
+              </svg>
+            </button>
+            <svg class="about-me__dot" width="4" height="4">
+              <use href="./images/symbol-defs.svg#icon-blackDot"></use>
+            </svg>
+            <svg class="about-me__dot" width="4" height="4">
+              <use href="./images/symbol-defs.svg#icon-blackDot"></use>
+            </svg>
+            <svg class="about-me__dot" width="4" height="4">
+              <use href="./images/symbol-defs.svg#icon-blackDot"></use>
+            </svg>
+          </div>
+          <ul class="about-me__list">
+            <li class="about-me__item">
+              <p class="about-me__paragrag">
+                <span class="about-me__number">79</span
+                ><span class="about-me__name"> posts</span>
+              </p>
+            </li>
+            <li class="about-me__item">
+              <p class="about-me__paragrag">
+                <span class="about-me__number">379</span
+                ><span class="about-me__name"> followers</span>
+              </p>
+            </li>
+            <li class="about-me__item">
+              <p class="about-me__paragrag">
+                <span class="about-me__number">179</span
+                ><span class="about-me__name"> following</span>
+              </p>
+            </li>
+          </ul>
+          <h2 class="about-me__title--secondary">Name</h2>
+          <p class="about-me__name--text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text.
+          </p>
+          <a href="#" class="about-me__link">bit.ly/35Ce3mX</a>
+          <picture class="about-me__photo">
+            <source
+              srcset="
+                ./images/about/little/webp/little@1x.webp 1x,
+                ./images/about/little/webp/little@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 152px) "
+            />
+            <source
+              srcset="
+                ./images/about/little/jpg/little@1x.jpg 1x,
+                ./images/about/little/jpg/little@2x.jpg 2x
+              "
+              type="image/jpeg"
+              sizes="(min-width: 152px) 152px"
+            />
+            <img src="./images/about/little/jpg/little@1x.jpg" alt="story" />
+          </picture>
+          <picture class="about-me__photo">
+            <source
+              srcset="
+                ./images/about/little/webp/little@1x.webp 1x,
+                ./images/about/little/webp/little@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 152px) "
+            />
+            <source
+              srcset="
+                ./images/about/little/jpg/little@1x.jpg 1x,
+                ./images/about/little/jpg/little@2x.jpg 2x
+              "
+              type="image/jpeg"
+              sizes="(min-width: 152px) 152px"
+            />
+            <img src="./images/about/little/jpg/little@1x.jpg" alt="story" />
+          </picture>
+          <picture class="about-me__photo">
+            <source
+              srcset="
+                ./images/about/little/webp/little@1x.webp 1x,
+                ./images/about/little/webp/little@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 152px) "
+            />
+            <source
+              srcset="
+                ./images/about/little/jpg/little@1x.jpg         1x,
+                ./images/gallery/about/little/jpg/little@2x.jpg 2x
+              "
+              type="image/jpeg"
+              sizes="(min-width: 152px) 152px"
+            />
+            <img src="./images/about/little/jpg/little@1x.jpg" alt="story" />
+          </picture>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 295px) "
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 295px) 295px"
+                />
+                <img src="./images/gallery/jpg/img70@1x.jpg" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture class="gallery__picture">
+                <source
+                  srcset="
+                    ./images/gallery/webp/img@1x.webp 1x,
+                    ./images/gallery/webp/img@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/jpg/img70@1x.jpg 1x,
+                    ./images/gallery/jpg/img70@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img src="./images/gallery/img.png" alt="post" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>
