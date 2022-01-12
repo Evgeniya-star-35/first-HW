@@ -124,134 +124,177 @@
     <main>
       <section class="about-me">
         <div class="container">
-          <div class="about-me__card">
-            <picture class="about-me__picture">
-              <source
-                srcset="
-                  ./images/about/webp/photo@1x.webp 1x,
-                  ./images/about/webp/photo@2x.webp 2x
-                "
-                type="image/webp"
-                media="(min-width: 152px) "
-              />
-              <source
-                srcset="
-                  ./images/about/jpg/photo1.jpg 1x,
-                  ./images/about/jpg/photo2.jpg 2x
-                "
-                type="image/jpeg"
-                sizes="(min-width: 152px) 152px"
-              />
-              <img src="./images/about/jpg/photo1.jpg" alt="user" />
-            </picture>
+          <div class="widget">
+            <div class="widget__part">
+              <div class="about-me__card">
+                <picture class="about-me__picture">
+                  <source
+                    srcset="
+                      ./images/about/webp/photo@1x.webp 1x,
+                      ./images/about/webp/photo@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 152px) "
+                  />
+                  <source
+                    srcset="
+                      ./images/about/jpg/photo1.jpg 1x,
+                      ./images/about/jpg/photo2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    sizes="(min-width: 152px) 152px"
+                  />
+                  <img src="./images/about/jpg/photo1.jpg" alt="user" />
+                </picture>
+              </div>
+            </div>
+            <div class="widget__part">
+              <div class="about-me__wrapper">
+                <h1 class="about-me__title">name</h1>
+                <button class="about-me__primary-btn">
+                  <span class="about-me__text">Follow</span>
+                </button>
+                <button class="about-me__secondary-btn">
+                  <svg class="about-me__icon" width="8" height="5">
+                    <use href="./images/symbol-defs.svg#icon-Polygon"></use>
+                  </svg>
+                </button>
+                <svg class="about-me__dot" width="4" height="4">
+                  <use href="./images/symbol-defs.svg#icon-blackDot"></use>
+                </svg>
+                <svg class="about-me__dot" width="4" height="4">
+                  <use href="./images/symbol-defs.svg#icon-blackDot"></use>
+                </svg>
+                <svg class="about-me__dot" width="4" height="4">
+                  <use href="./images/symbol-defs.svg#icon-blackDot"></use>
+                </svg>
+              </div>
+              <ul class="about-me__list">
+                <li class="about-me__item">
+                  <p class="about-me__paragrag">
+                    <span class="about-me__number">79</span
+                    ><span class="about-me__name"> posts</span>
+                  </p>
+                </li>
+                <li class="about-me__item">
+                  <p class="about-me__paragrag">
+                    <span class="about-me__number">379</span
+                    ><span class="about-me__name"> followers</span>
+                  </p>
+                </li>
+                <li class="about-me__item">
+                  <p class="about-me__paragrag">
+                    <span class="about-me__number">179</span
+                    ><span class="about-me__name"> following</span>
+                  </p>
+                </li>
+              </ul>
+              <h2 class="about-me__title--secondary">Name</h2>
+              <p class="about-me__name--text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text.
+              </p>
+              <a href="#" class="about-me__link">bit.ly/35Ce3mX</a>
+            </div>
           </div>
-          <h1 class="about-me__title">name</h1>
-          <div class="about-me__wrapper">
-            <button class="about-me__primary-btn">
-              <span class="about-me__text">Follow</span>
-            </button>
-            <button class="about-me__secondary-btn">
-              <svg class="about-me__icon" width="8" height="5">
-                <use href="./images/symbol-defs.svg#icon-Polygon"></use>
-              </svg>
-            </button>
-            <svg class="about-me__dot" width="4" height="4">
-              <use href="./images/symbol-defs.svg#icon-blackDot"></use>
-            </svg>
-            <svg class="about-me__dot" width="4" height="4">
-              <use href="./images/symbol-defs.svg#icon-blackDot"></use>
-            </svg>
-            <svg class="about-me__dot" width="4" height="4">
-              <use href="./images/symbol-defs.svg#icon-blackDot"></use>
-            </svg>
-          </div>
-          <ul class="about-me__list">
-            <li class="about-me__item">
-              <p class="about-me__paragrag">
-                <span class="about-me__number">79</span
-                ><span class="about-me__name"> posts</span>
-              </p>
+
+          <ul class="about-me__set">
+            <li class="about-me__card about-me__card--little">
+              <picture class="about-me__photo">
+                <source
+                  srcset="
+                    ./images/about/little/webp/little@1x.webp 1x,
+                    ./images/about/little/webp/little@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 152px) "
+                />
+                <source
+                  srcset="
+                    ./images/about/little/jpg/little@1x.jpg 1x,
+                    ./images/about/little/jpg/little@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 152px) 152px"
+                />
+                <img
+                  src="./images/about/little/jpg/little@1x.jpg"
+                  alt="story"
+                />
+              </picture>
+              <h3 class="about-me__discription">Name</h3>
             </li>
-            <li class="about-me__item">
-              <p class="about-me__paragrag">
-                <span class="about-me__number">379</span
-                ><span class="about-me__name"> followers</span>
-              </p>
+            <li class="about-me__card about-me__card--little">
+              <picture class="about-me__photo">
+                <source
+                  srcset="
+                    ./images/about/little/webp/little@1x.webp 1x,
+                    ./images/about/little/webp/little@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 152px) "
+                />
+                <source
+                  srcset="
+                    ./images/about/little/jpg/little@1x.jpg 1x,
+                    ./images/about/little/jpg/little@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 152px) 152px"
+                />
+                <img
+                  src="./images/about/little/jpg/little@1x.jpg"
+                  alt="story"
+                />
+              </picture>
+              <h3 class="about-me__discription">Name</h3>
             </li>
-            <li class="about-me__item">
-              <p class="about-me__paragrag">
-                <span class="about-me__number">179</span
-                ><span class="about-me__name"> following</span>
-              </p>
+            <li class="about-me__card about-me__card--little">
+              <picture class="about-me__photo">
+                <source
+                  srcset="
+                    ./images/about/little/webp/little@1x.webp 1x,
+                    ./images/about/little/webp/little@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 152px) "
+                />
+                <source
+                  srcset="
+                    ./images/about/little/jpg/little@1x.jpg         1x,
+                    ./images/gallery/about/little/jpg/little@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 152px) 152px"
+                />
+                <img
+                  src="./images/about/little/jpg/little@1x.jpg"
+                  alt="story"
+                />
+              </picture>
+              <h3 class="about-me__discription">Name</h3>
             </li>
           </ul>
-          <h2 class="about-me__title--secondary">Name</h2>
-          <p class="about-me__name--text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text.
-          </p>
-          <a href="#" class="about-me__link">bit.ly/35Ce3mX</a>
-          <picture class="about-me__photo">
-            <source
-              srcset="
-                ./images/about/little/webp/little@1x.webp 1x,
-                ./images/about/little/webp/little@2x.webp 2x
-              "
-              type="image/webp"
-              media="(min-width: 152px) "
-            />
-            <source
-              srcset="
-                ./images/about/little/jpg/little@1x.jpg 1x,
-                ./images/about/little/jpg/little@2x.jpg 2x
-              "
-              type="image/jpeg"
-              sizes="(min-width: 152px) 152px"
-            />
-            <img src="./images/about/little/jpg/little@1x.jpg" alt="story" />
-          </picture>
-          <picture class="about-me__photo">
-            <source
-              srcset="
-                ./images/about/little/webp/little@1x.webp 1x,
-                ./images/about/little/webp/little@2x.webp 2x
-              "
-              type="image/webp"
-              media="(min-width: 152px) "
-            />
-            <source
-              srcset="
-                ./images/about/little/jpg/little@1x.jpg 1x,
-                ./images/about/little/jpg/little@2x.jpg 2x
-              "
-              type="image/jpeg"
-              sizes="(min-width: 152px) 152px"
-            />
-            <img src="./images/about/little/jpg/little@1x.jpg" alt="story" />
-          </picture>
-          <picture class="about-me__photo">
-            <source
-              srcset="
-                ./images/about/little/webp/little@1x.webp 1x,
-                ./images/about/little/webp/little@2x.webp 2x
-              "
-              type="image/webp"
-              media="(min-width: 152px) "
-            />
-            <source
-              srcset="
-                ./images/about/little/jpg/little@1x.jpg         1x,
-                ./images/gallery/about/little/jpg/little@2x.jpg 2x
-              "
-              type="image/jpeg"
-              sizes="(min-width: 152px) 152px"
-            />
-            <img src="./images/about/little/jpg/little@1x.jpg" alt="story" />
-          </picture>
         </div>
       </section>
       <section class="gallery">
-        <div class="container">
+        <div class="container container--bordered">
+          <h2 class="visually-hidden">Gallery</h2>
+          <ul class="publications">
+            <li class="publications__item">
+              <svg class="about-me__icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-hash"></use>
+              </svg>
+              <h3 class="publications__title">POSTS</h3>
+            </li>
+            <li class="publications__item">
+              <svg class="about-me__icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+              <h3 class="publications__title">TAGGED</h3>
+            </li>
+          </ul>
           <ul class="gallery__list">
             <li class="gallery__item">
               <picture class="gallery__picture">

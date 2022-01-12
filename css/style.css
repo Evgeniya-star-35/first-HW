@@ -36,6 +36,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
 .container{
   width: 1450px;
   padding: 0 256px;
@@ -125,14 +135,36 @@ img {
     top: 13px;
     right: 606px;
 }
+.about-me{
+    padding-top: 26px;
+    padding-bottom: 55px;
+}
+.widget{
+    display: flex;
+}
+
+.widget__part{
+    display: block;
+}
 .about-me__card{
+    display: block;
     width: 152px;
     height: 152px;
+    margin-left: 65px;
+    margin-right: 100px;
+    margin-bottom: 100px;
     overflow: hidden;
     border-radius: 50%;
     background-image: var(--gradient);
 }
+.about-me__wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 24px;
+}
 .about-me__title{
+    margin-right: 26px;
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
@@ -146,6 +178,8 @@ img {
     height: 30px;
     margin-right: 8px;
     border-radius: 3px;
+    cursor: pointer;
+    outline: none;
     background-color: var(--accent-color);
 }
 .about-me__primary-btn:hover,
@@ -158,11 +192,10 @@ img {
     color: var(--secondary-bg-color);
 }
 .about-me__secondary-btn{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     height: 30px;
     width: 33px;
+    cursor: pointer;
+    padding: 0px 4px;
     margin-right: 16px;
     border-radius: 3px;
     background-color: var(--accent-color);
@@ -202,10 +235,27 @@ img {
 .about-me__link:hover{
     color: var(--accent-color);
 }
-
+.about-me__set{
+    display: flex;
+}
+.about-me__card--little{
+    width: 78px;
+    height: 78px;
+    margin-bottom: 15px;
+}
+.about-me__card--little:first-child {
+  margin-left: 40px;
+}
+.about-me__card--little:not(:last-child){
+    margin-right: 55px;
+}
 .gallery{
     padding-top: 18px;
     padding-bottom: 122px;
+}
+.container--bordered{
+    width: 935px;
+    border-top: var(--bordered);
 }
 .gallery__list{
     display: flex;
@@ -222,3 +272,11 @@ img {
     background-image: var(--gradient)
     /* linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); */
 }
+.publications{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+     
