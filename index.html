@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -142,7 +142,6 @@
                       ./images/about/jpg/photo2.jpg 2x
                     "
                     type="image/jpeg"
-                    sizes="(min-width: 152px) 152px"
                   />
                   <img src="./images/about/jpg/photo1.jpg" alt="user" />
                 </picture>
@@ -199,7 +198,7 @@
             </div>
           </div>
           <ul class="about-me__set">
-            <li>
+            <li class="about-me__story">
               <picture class="about-me__card about-me__card--little">
                 <source
                   srcset="
@@ -215,18 +214,16 @@
                     ./images/about/little/jpg/little@2x.jpg 2x
                   "
                   type="image/jpeg"
-                  sizes="(min-width: 152px) 152px"
                 />
                 <img
                   src="./images/about/little/jpg/little@1x.jpg"
                   alt="story"
                 />
               </picture>
-              <div>
-                <h3 class="about-me__discription">Name</h3>
-              </div>
+
+              <h3 class="about-me__discription">Name</h3>
             </li>
-            <li>
+            <li class="about-me__story">
               <picture class="about-me__card about-me__card--little">
                 <source
                   srcset="
@@ -242,7 +239,6 @@
                     ./images/about/little/jpg/little@2x.jpg 2x
                   "
                   type="image/jpeg"
-                  sizes="(min-width: 152px) 152px"
                 />
                 <img
                   src="./images/about/little/jpg/little@1x.jpg"
@@ -251,7 +247,7 @@
               </picture>
               <h3 class="about-me__discription">Name</h3>
             </li>
-            <li>
+            <li class="about-me__story">
               <picture class="about-me__card about-me__card--little">
                 <source
                   srcset="
@@ -267,7 +263,6 @@
                     ./images/gallery/about/little/jpg/little@2x.jpg 2x
                   "
                   type="image/jpeg"
-                  sizes="(min-width: 152px) 152px"
                 />
                 <img
                   src="./images/about/little/jpg/little@1x.jpg"
@@ -285,15 +280,28 @@
           <h2 class="visually-hidden">Gallery</h2>
           <ul class="publications">
             <li class="publications__item">
-              <svg class="about-me__icon" width="12" height="12">
-                <use href="./images/symbol-defs.svg#icon-hash"></use>
-              </svg>
-              <h3 class="publications__title">POSTS</h3>
+              <a
+                href="#"
+                class="
+                  publications__link
+                  publications__link--current
+                  publications__link--active
+                "
+              >
+                <svg class="publications__icon" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-hash"></use>
+                </svg>
+              </a>
+              <h3 class="publications__title publications__link--active">
+                POSTS
+              </h3>
             </li>
             <li class="publications__item">
-              <svg class="about-me__icon" width="12" height="12">
-                <use href="./images/symbol-defs.svg#icon-person"></use>
-              </svg>
+              <a href="#" class="publications__link">
+                <svg class="publications__icon" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </a>
               <h3 class="publications__title">TAGGED</h3>
             </li>
           </ul>
@@ -314,7 +322,6 @@
                     ./images/gallery/jpg/img70@2x.jpg 2x
                   "
                   type="image/jpeg"
-                  sizes="(min-width: 295px) 295px"
                 />
                 <img src="./images/gallery/jpg/img70@1x.jpg" alt="post" />
               </picture>
@@ -352,7 +359,7 @@
                     ./images/gallery/jpg/img70@1x.jpg 1x,
                     ./images/gallery/jpg/img70@2x.jpg 2x
                   "
-                  type="image/jpeg"
+                  type="image/jpg"
                 />
                 <img src="./images/gallery/img.png" alt="post" />
               </picture>
