@@ -190,7 +190,7 @@
                 </li>
               </ul>
               <h2 class="about-me__title--secondary">Name</h2>
-              <p class="about-me__name--text">
+              <p class="about-me__name about-me__name--text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text.
@@ -198,10 +198,36 @@
               <a href="#" class="about-me__link">bit.ly/35Ce3mX</a>
             </div>
           </div>
-
           <ul class="about-me__set">
-            <li class="about-me__card about-me__card--little">
-              <picture class="about-me__photo">
+            <li>
+              <picture class="about-me__card about-me__card--little">
+                <source
+                  srcset="
+                    ./images/about/little/webp/little@1x.webp 1x,
+                    ./images/about/little/webp/little@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 152px) "
+                />
+                <source
+                  srcset="
+                    ./images/about/little/jpg/little@1x.jpg 1x,
+                    ./images/about/little/jpg/little@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  sizes="(min-width: 152px) 152px"
+                />
+                <img
+                  src="./images/about/little/jpg/little@1x.jpg"
+                  alt="story"
+                />
+              </picture>
+              <div>
+                <h3 class="about-me__discription">Name</h3>
+              </div>
+            </li>
+            <li>
+              <picture class="about-me__card about-me__card--little">
                 <source
                   srcset="
                     ./images/about/little/webp/little@1x.webp 1x,
@@ -225,33 +251,8 @@
               </picture>
               <h3 class="about-me__discription">Name</h3>
             </li>
-            <li class="about-me__card about-me__card--little">
-              <picture class="about-me__photo">
-                <source
-                  srcset="
-                    ./images/about/little/webp/little@1x.webp 1x,
-                    ./images/about/little/webp/little@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(min-width: 152px) "
-                />
-                <source
-                  srcset="
-                    ./images/about/little/jpg/little@1x.jpg 1x,
-                    ./images/about/little/jpg/little@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  sizes="(min-width: 152px) 152px"
-                />
-                <img
-                  src="./images/about/little/jpg/little@1x.jpg"
-                  alt="story"
-                />
-              </picture>
-              <h3 class="about-me__discription">Name</h3>
-            </li>
-            <li class="about-me__card about-me__card--little">
-              <picture class="about-me__photo">
+            <li>
+              <picture class="about-me__card about-me__card--little">
                 <source
                   srcset="
                     ./images/about/little/webp/little@1x.webp 1x,
@@ -279,7 +280,8 @@
         </div>
       </section>
       <section class="gallery">
-        <div class="container container--bordered">
+        <div class="container">
+          <div class="container--bordered"></div>
           <h2 class="visually-hidden">Gallery</h2>
           <ul class="publications">
             <li class="publications__item">
