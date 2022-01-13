@@ -155,8 +155,11 @@ img {
 }
 .nav__number{
     position: absolute;
-    top: 14px;
+    top: 15px;
     right: 606px;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--secondary-bg-color);
 }
 .about-me{
     padding-top: 26px;
