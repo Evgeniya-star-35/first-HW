@@ -46,7 +46,9 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
-
+a{
+    text-decoration: none;
+}
 p,h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
@@ -200,7 +202,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 35px;
     margin-bottom: 24px;
 }
-
+.about-me__details{
+    cursor: pointer;
+    color: var(--primary-text-color);
+    transition: box-shadow var(--animation),transform var(--timing-function)
+}
+.about-me__details:hover{
+    color: var(--accent-color);
+}
 .about-me__title{
     margin-right: 26px;
     font-weight: bold;
@@ -308,9 +317,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: var(--link-color);
 }
 .about-me__link:hover{
-    background: linear-gradient(
-90deg
-,#a188fc,#2eeade 50%,#a188fc);
     color: var(--accent-color);
 }
 .about-me__set{
@@ -357,7 +363,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: 25px;
     flex-basis: calc((100% - 3 * 25px) / 3);
      cursor: pointer;
-     transition: box-shadow var(--animation),transform var(--animation)
+     transition: box-shadow var(--animation),transform var(--timing-function)
 }
 .gallery__picture{
    background-image: var(--gradient);
