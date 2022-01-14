@@ -163,13 +163,8 @@ img {
 }
 .nav__number{
     position: absolute;
-    width: 8px;
-    height: 18px;
-    bottom: 9px;
+    bottom: 8px;
     left: 18px;
-    font-size: 12px;
-    line-height: 14px;
-    color: var(--secondary-bg-color);
 }
 .about-me{
     padding-top: 26px;
