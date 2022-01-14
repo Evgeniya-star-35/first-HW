@@ -155,20 +155,18 @@ img {
     
 }
 
-.nav__icon--arrow{
-    position: relative;
-}
+
 .nav__ellips{
     position: absolute;
-    left: 11px;
-    bottom: 11px;
+    left: 12px;
+    bottom: 8px;
 }
 .nav__number{
     position: absolute;
     width: 8px;
     height: 18px;
     bottom: 9px;
-    left: 19px;
+    left: 18px;
     font-size: 12px;
     line-height: 14px;
     color: var(--secondary-bg-color);
