@@ -146,6 +146,7 @@ img {
     margin-right: 22px;
 }
 .nav__link{
+    position: relative;
     fill: var(--primary-text-color);
 }
 .nav__link:hover{
@@ -159,13 +160,15 @@ img {
 }
 .nav__ellips{
     position: absolute;
-    top: 13px;
-    right: 600px;
+    left: 11px;
+    bottom: 11px;
 }
 .nav__number{
     position: absolute;
-    top: 15px;
-    right: 606px;
+    width: 8px;
+    height: 18px;
+    bottom: 9px;
+    left: 19px;
     font-size: 12px;
     line-height: 14px;
     color: var(--secondary-bg-color);
@@ -220,7 +223,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 17px;
     line-height: 21px;
 }
-.about-me__primary-btn{
+.about-me__btn{
     width: 100px;
     height: 30px;
     margin-right: 8px;
@@ -229,8 +232,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     background-color: var(--accent-color);
 }
-.about-me__primary-btn:hover,
-.about-me__primary-btn:focus{
+.about-me__btn:hover,
+.about-me__btn:focus{
     background: linear-gradient(
 90deg
 ,#a188fc,#2eeade 50%,#a188fc);
@@ -262,14 +265,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .about-me__select:hover{
     background: linear-gradient(
 90deg
-,#a188fc,#2eeade 50%,#a188fc);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.about-me__secondary-btn:hover,
-.about-me__secondary-btn:focus{
-    background: linear-gradient(
-90deg
-,#a188fc,#2eeade 50%,#a188fc);
+,#a188fc,#2eeade 50%,#a188fc);;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .about-me__dots{
