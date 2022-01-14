@@ -134,7 +134,11 @@ img {
     transform: translateY(-50%);
     
 }
-
+::placeholder {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 17px;
+}
 .nav__list{
     display: flex;
     justify-content: center;
