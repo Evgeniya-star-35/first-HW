@@ -315,7 +315,7 @@ transform: translateY(-10%);
 .about-me__discription{
     font-weight: bold;
     font-size: 14px;
-    padding-right: 16px;
+    padding-left: 62px;
     line-height: 17px;
 
 }
@@ -332,6 +332,7 @@ transform: translateY(-10%);
     display: flex;
     margin-top: 56px;
 }
+
 .about-me__story{
     display: flex;
     flex-direction: column;
@@ -341,18 +342,16 @@ transform: translateY(-10%);
 .about-me__card--little{
     width: 78px;
     height: 78px;
+    margin-right: 0;
     margin-bottom: 15px;
     border: 3px solid var(--secondary-bg-color);
-    /* border: var(--bordered); */
     transition: box-shadow var(--animation),transform var(--timing-function);
 }
 .about-me__card--little:hover{
     box-shadow: 0 10px 10px -7px #000,1px 3px 7px 6px var(--accent-color);
     transform: translateY(-10%);
 }
-.about-me__card--little:first-child {
-  margin-left: 40px;
-}
+
 .about-me__card--little:not(:last-child){
     margin-right: 55px;
 }
