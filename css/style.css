@@ -248,7 +248,6 @@ transform: translateY(-10%);
     width: 33px;
     padding: 0px 4px;
     margin-right: 16px;
-    /* background-image: url(/images/Polygon.svg); */
     background-size: 8px 5px;
     background-position-x: 52%;
     background-position-y: 13px;
@@ -343,7 +342,8 @@ transform: translateY(-10%);
     width: 78px;
     height: 78px;
     margin-bottom: 15px;
-    border: var(--bordered);
+    border: 3px solid var(--secondary-bg-color);
+    /* border: var(--bordered); */
     transition: box-shadow var(--animation),transform var(--timing-function);
 }
 .about-me__card--little:hover{
