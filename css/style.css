@@ -125,6 +125,7 @@ img {
 .header-form__button:hover,
 .header-form__button:focus{
     cursor: pointer;
+    transition: 0.5s;
     fill: var(--accent-color);
 }
 .header-form__icon {
@@ -158,6 +159,7 @@ img {
 .nav__link:hover{
     fill: var(--accent-color);
     stroke: var(--accent-color);
+    transition: 0.5s;
     
 }
 
@@ -198,6 +200,7 @@ img {
 .about-me__card:hover{
 box-shadow: 0 10px 10px -7px #000,1px 3px 7px 6px var(--accent-color);
 transform: scale(1.15) translateY(-10%);
+transition: 0.5s;
 }
 .about-me__wrapper{
     display: flex;
@@ -212,6 +215,7 @@ transform: scale(1.15) translateY(-10%);
 }
 .about-me__details:hover{
     color: var(--accent-color);
+    transition: 0.5s;
 }
 .about-me__title{
     margin-right: 26px;
@@ -240,6 +244,7 @@ transform: scale(1.15) translateY(-10%);
 90deg
 ,#a188fc,#2eeade 50%,#a188fc);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
 }
 .about-me__text{
     font-weight: 700;
@@ -273,6 +278,7 @@ transform: scale(1.15) translateY(-10%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     outline: none;
     border: none;
+    transition: 0.5s;
 }
 .about-me__blok{
     position: relative;
@@ -294,6 +300,7 @@ transform: scale(1.15) translateY(-10%);
 .about-me__dot:hover{
     fill: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
 }
 
 .list{
@@ -311,6 +318,7 @@ transition: color var(--animation),transform var(--timing-function);
 }
 .link:hover{
     color: var(--accent-color);
+    transition: 0.5s;
 }
 .link__number{
   font-weight: bold;
@@ -334,6 +342,7 @@ transition: color var(--animation),transform var(--timing-function);
 }
 .about-me__link:hover{
     color: var(--accent-color);
+    transition: 0.5s;
 }
 .set{
     display: flex;
@@ -363,6 +372,7 @@ transition: color var(--animation),transform var(--timing-function);
 .set__card:hover{
     box-shadow: 0 10px 10px -7px #000,1px 3px 7px 6px var(--accent-color);
     transform: translateY(-10%);
+    transition: 0.5s;
 }
 
 .set__card:not(:last-child){
@@ -402,6 +412,7 @@ transition: color var(--animation),transform var(--timing-function);
 .gallery__item:hover{
 box-shadow: 0 10px 10px -7px #000,1px 3px 7px 6px var(--accent-color);
     transform: translateY(-10%);
+    transition: 0.5s;
 }
 .picture{
    background-image: var(--gradient);
